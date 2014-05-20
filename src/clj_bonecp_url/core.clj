@@ -67,7 +67,7 @@
     (when increment (.setAcquireIncrement s increment))
     (when user (.setUsername s user))
     (when username (.setUsername s username))
-    (when username (.setPassword s password))
+    (when password (.setPassword s password))
     s))
 
 (defn datasource-from-url
