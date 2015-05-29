@@ -1,10 +1,14 @@
+# STOP RIGHT THERE
+
+[HikariCP](http://brettwooldridge.github.io/HikariCP/) is a new connection pool that's faster and smaller than BoneCP. There is [a Clojure wrapper](https://github.com/tomekw/hikari-cp) that doesn't seem to contain URL parsing code... You probably should take it from here but actually use it with HikariCP.
+
 Current [semantic](http://semver.org/) version:
 
 [![clojars version](https://clojars.org/clj-bonecp-url/latest-version.svg?raw=true)](https://clojars.org/clj-bonecp-url)
 
 # clj-bonecp-url
 
-A Clojure wrapper for [BoneCP](http://jolbox.com/), the best JDBC connection pool ([has impressive benchmarks](http://jolbox.com/index.html?page=http://jolbox.com/benchmarks.html), [is used by Play Framework](http://www.playframework.com/documentation/2.1.0/SettingsJDBC)).
+A Clojure wrapper for [BoneCP](http://jolbox.com/), a JDBC connection pooling library.
 Can parse URLs.
 Works with Heroku Postgres, even remotely (ie. doesn't lose SSL parameters from the URLs).
 
@@ -57,7 +61,7 @@ or plain old java.jdbc:
 
 ## License
 
-Copyright © 2013 Greg V.
+Copyright © 2013-2015 Greg V.  
 Contains code from [clj-bonecp](https://github.com/opiskelijarekisteri-devel/clj-bonecp) and [clj-dbcp](https://github.com/kumarshantanu/clj-dbcp).
 
 Distributed under the Eclipse Public License, the same as Clojure.
